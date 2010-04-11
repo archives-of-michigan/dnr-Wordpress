@@ -1,0 +1,24 @@
+/*	Governing Michigan: screen master
+	----------------------------
+	Author:		 (http://airbagindustries.com/)
+	Version:	040709
+	Copyright:	(c) 2009 Airbag Industries, LLC. until the contract is complete.
+			All rights reserved.
+*/
+
+
+/*-  CSS "libraries"
+----------------------------------------------------------------------*/
+@import url("reset.css");
+
+
+/*-  Core, patch-free design
+----------------------------------------------------------------------*/
+@import url("core.css");
+
+
+/*-  Browser-specific patches
+----------------------------------------------------------------------*/
+/*\*//*/
+@import url("patches/mac-ie5.css");
+/**/

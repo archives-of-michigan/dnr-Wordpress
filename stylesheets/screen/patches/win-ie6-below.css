@@ -1,0 +1,110 @@
+/*  search button using .gif instead of transparent .png */
+input#search-button {
+	background-image: url(../../../img/search-button.gif) ;
+}
+
+.search-label {
+	display: none;
+}
+.discover #item-view {
+	width: 600px;
+}
+.discover #item-view .wrapper {
+	padding: 0;
+	margin: 0;
+	width: 600px;
+}
+.discover #item-view ul.meta-data {
+	width: 600px;
+	}
+
+#section-header {
+	margin: 0 auto;
+}
+#main {
+	width: 937px;
+	background-image: none;
+	background-color: #fff;
+}
+#main .wrapper {
+	margin-left: -0px;
+}
+#header .wrapper #nav {
+	right: 12px;
+}
+#main-bars {
+	padding-left: 0px;
+	padding-top: 0px;
+	margin-top: -1px;
+	margin-left: 0px;
+}
+.discover .collections li span img {
+	/* max- */width: 190px;
+}
+
+/* replace with GIFs instead of PNGs */
+.paginate li.previous {
+	background-image: url(../../../img/arrow-left-off.gif);
+}
+.paginate li.next {
+	background-image: url(../../../img/arrow-right-off.gif);
+}
+/* on mode */
+.paginate li.previous a {
+	background-image: url(../../../img/arrow-left-on.gif);
+}
+.paginate li.next a {
+	background-image: url(../../../img/arrow-right-on.gif);
+}
+
+.discover #sidebar .wrapper{
+	margin: 0 0 30px;
+	width: 200px;
+}
+
+.discover #advanced-search {
+	margin-bottom: 30px;
+}
+.discover #advanced-search .wrapper {
+	margin-bottom: 30px;
+}
+.discover #advanced-search form {
+	height: 450px;
+	margin-bottom: 30px;
+}
+#search-results .wrapper {
+	margin-bottom: 30px;
+}
+
+
+body.home input#search-button {
+	background: transparent url(../../../img/search-button.gif) no-repeat;
+}
+#advanced-search #advanced-search-button {
+	background-image: url(../../../img/search-button.gif);
+	width: 98px;
+	height: 25px;
+}
+input#search-collection-button {
+	background: transparent url(../../../img/search-button.gif) no-repeat;
+}
+.discover ul#meta-data {
+	width: 655px;
+	margin: 0;
+	padding: 0;
+}
+
+.discover .collection-intro {
+	zoom: 1;
+}
+body #footer .links ul li {
+	border-left: solid 1px #7d7d5f;
+	margin-left: 0;
+	padding-left: 10px;
+}
+.discover #sidebar ul.prev-next li img {
+	width: 64px;
+	height: 46px;
+}
+
+
