@@ -1,44 +1,34 @@
-<?php
-include("config.php");
-$title = "Home";
-$breadcrumbs = array('Home' => '');
-# TODO: $collection = Collection::from_alias('');
+<? define("BODY_CLASS","home"); ?>
+<? get_header(); ?>
 
-app()->partial('header', 
-  array('body_class' => 'discover',
-    'breadcrumbs' => $breadcrumbs, 
-    'css_includes' => $css_includes,
-    'js_includes' => $js_includes,
-    'title' => 'Home',
-    'current_item' => $current_item));
-?>
-<div id="logo-bar">
-  <p>Your resource for government documents from the State of Michigan</p>
-</div>
-<div id="seek-bar">
-  <div class="wrapper">
-    <form method="get" action="seek_results.php">
-    <h3><label for="search-text">Keyword Search.</label></h3>
-    <h4>Lorem Ipsum Dolor.</h4>
-    <p>Lambio delictu ando factisi lomar. Lorem ipsum dolor sit amet collecti ambio delictu ando factisi lomar gallardo.</p>
-    <p>Quandicum ergo sum ad liricus.</p>      
-    <input type="hidden" name="CISOOP1" value="any" />
-    <input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" />
-    <input type="hidden" name="CISOROOT" value="all" />
-    <input type="text" name="CISOBOX1" id="search-text" value="" />
-    <!--[if lt IE 7]><br /><![endif]-->
-    <label for="search-button" class="hidden">Search</label>
-    <input type="image" src="/images/x.gif" id="search-button" name="search-button" value=" " />
-  </form>
-  <p class="advanced-search"><a href="/seek">Advanced Search</a></p>
- </div>
-</div>
-<div id="discover-bar">
-  <div class="wrapper">
-    <h3>COLLECTION NAME </h3>
-    <h4><a href="seek_results.php?alias=collection" title="View COLLECTION NAME">COLLECTION BYLINE</a></h4>
-    <p>COLLECTION DESCRIPTION</p>
-    <p><a href="seek_results.php?alias=collection" title="Read more">Read more »</a> | <a href="/discover.php" title="View more collections">View more collections &raquo;</a></p>
-    <p class="advanced"><a href="seek_results.php?alias=collection">COLLECTION NAME</a></p>
-  </div>
-</div>
+<?php if (have_posts()) : ?>
+
+	<?php while (have_posts()) : the_post(); ?>
+
+		<div class="post" id="post-<?php the_ID(); ?>">
+			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			<small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
+
+			<div class="entry">
+				<?php the_content('Read the rest of this entry &raquo;'); ?>
+			</div>
+
+			<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+		</div>
+
+	<?php endwhile; ?>
+
+	<div class="navigation">
+		<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+		<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+	</div>
+
+<?php else : ?>
+
+	<h2 class="center">Not Found</h2>
+	<p class="center">Sorry, but you are looking for something that isn't here.</p>
+	<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+
+<?php endif; ?>
+
+<?php get_footer(); ?>
