@@ -8,6 +8,8 @@ function app() {
   return $SM_APP;
 }
 
+app()->add_partial_root('govern_include_partials', dirname(__FILE__).'/include/partials');
+
 function recent_articles($category, $num) {
 	global $recent_articles;
 	$recent_articles = get_posts(array('category__and' => array($category), 'category__not_in' => array(14,15), 'numberposts' => 5));
