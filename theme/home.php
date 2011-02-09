@@ -41,3 +41,4 @@ app()->partial('header',
     <p class="advanced"><a href="seek_results.php?alias=collection">COLLECTION NAME</a></p>
   </div>
 </div>
+<?php app()->partial('footer'); ?>
