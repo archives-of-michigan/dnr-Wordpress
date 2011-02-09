@@ -1,5 +1,4 @@
 <?php
-include("config.php");
 $title = "Home";
 $breadcrumbs = array('Home' => '');
 # TODO: $collection = Collection::from_alias('');
@@ -17,7 +16,7 @@ app()->partial('header',
 </div>
 <div id="seek-bar">
   <div class="wrapper">
-    <form method="get" action="seek_results.php">
+    <form method="get" action="http://cdm15559.contentdm.oclc.org/seek_results.php">
     <h3><label for="search-text">Keyword Search.</label></h3>
     <h4>Lorem Ipsum Dolor.</h4>
     <p>Lambio delictu ando factisi lomar. Lorem ipsum dolor sit amet collecti ambio delictu ando factisi lomar gallardo.</p>
