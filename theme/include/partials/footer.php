@@ -1,12 +1,6 @@
       </div>
     </div>
     <div id="footer">
-      <div id="main-whitebox-bottom"></div>
-      <div class="michigan-circle">
-        <a href="http://mi.gov">
-          <img src="/images/michigan-state-circle.png" alt="michigan seal" />
-        </a>
-      </div>
       <div class="wrapper">
         <div class="links">
           <ul class="first">
