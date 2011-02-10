@@ -1,15 +1,12 @@
 <?php
 $title = "Home";
-$breadcrumbs = array('Home' => '');
 # TODO: $collection = Collection::from_alias('');
 
 app()->partial('header', 
-  array('body_class' => 'home',
-    'breadcrumbs' => $breadcrumbs, 
-    'css_includes' => $css_includes,
-    'js_includes' => $js_includes,
-    'title' => 'Home',
-    'current_item' => $current_item));
+  array(
+    'breadcrumbs' => array('Home' => ''),
+    'body_class' => 'home',
+    'title' => 'Home'));
 ?>
 <div class="wrapper">
   <div id="main-bars">
