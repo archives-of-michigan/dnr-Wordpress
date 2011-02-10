@@ -6,13 +6,10 @@
             <li><a href="/">Home</a></li>
             <li><a href="http://cdm15559.contentdm.oclc.org/seek_advanced.php">Seek</a></li>
             <li><a href="/discover">Discover</a></li>
-            <li><a href="/look">Look</a></li>
-            <li><a href="/teach">Teach</a></li>
           </ul>
           <ul class="second">
             <li><a href="/about">About</a></li>
             <li><a href="/resources">Resources</a></li>
-            <li><a href="/archive">Archives</a></li>
             <li><a href="/copyright">Copyright</a></li>
           </ul>
           <p>&copy; 2008-<?= date('Y'); ?> <a href="/">dnr.seekingmichigan.org</a>. All Rights Reserved.  </p>
