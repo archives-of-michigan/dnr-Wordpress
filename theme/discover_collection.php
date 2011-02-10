@@ -23,9 +23,11 @@ $collection = create_collection($collection_post, $contentdm, array($cdm_collect
 
 $featured_items = $contentdm->featured_items_for_collection($collection_alias);
 
-$breadcrumbs = array('Discover' => '/discover', 'Collections' => '/discover', $collection['name'] => '');
-define("BODY_CLASS","discover");
-include('header.php');
+app()->partial('header', 
+  array(
+    'breadcrumbs' => array('Discover' => '/discover', 'Collections' => '/discover', $collection['name'] => ''),
+    'body_class' => 'discover',
+    'title' => 'Discover Collection'));
 ?>
 <div id="section-header">
   <h1><a href="/discover">Discover</a></h1>
@@ -114,4 +116,4 @@ include('header.php');
     </div>
   </div>
 </div>
-<? include('footer.php'); ?>
+<?php app()->partial('footer', array()); ?>
