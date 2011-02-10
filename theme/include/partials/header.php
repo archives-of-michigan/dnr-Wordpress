@@ -52,7 +52,7 @@ $css_includes = isset($css_includes) ? $css_includes : array();
     </script>
   <? endif; ?>
 </head>
-<body id="www-governingmichigan-gov" <? if(defined($body_class)): ?>class="<?= $body_class ?>"<? endif; ?>>
+<body id="www-governingmichigan-gov" <? if(isset($body_class)): ?>class="<?= $body_class ?>"<? endif; ?>>
   <div class="wrapper">
     <div id="header">
       <div class="wrapper">
