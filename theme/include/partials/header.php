@@ -59,7 +59,7 @@ $css_includes = isset($css_includes) ? $css_includes : array();
         <h1>
           <a href="/">
             <span>
-              <img src="" width="309" height="41" alt="Governing Michigan Logo" />
+              <img src="/images/" width="309" height="41" alt="Governing Michigan Logo" />
               Governing Michigan
             </span>
           </a>
@@ -71,3 +71,4 @@ $css_includes = isset($css_includes) ? $css_includes : array();
       </div>
     </div>
     <div id="main">
+      <div class="wrapper">
