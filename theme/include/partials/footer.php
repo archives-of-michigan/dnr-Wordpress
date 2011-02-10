@@ -4,13 +4,13 @@
       <div id="main-whitebox-bottom"></div>
       <div class="michigan-circle">
         <a href="http://mi.gov">
-          <img src="<?= SEEKING_MICHIGAN_HOST ?>/images/michigan-state-circle.png" alt="michigan seal" />
+          <img src="/images/michigan-state-circle.png" alt="michigan seal" />
         </a>
       </div>
       <div class="wrapper">
         <div class="links">
           <ul class="first">
-            <li><a href="<?= SEEKING_MICHIGAN_HOST ?>">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="seek_advanced.php">Seek</a></li>
             <li><a href="<?= SEEKING_MICHIGAN_HOST ?>/discover">Discover</a></li>
             <li><a href="<?= SEEKING_MICHIGAN_HOST ?>/look">Look</a></li>

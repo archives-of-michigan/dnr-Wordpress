@@ -56,10 +56,17 @@ $css_includes = isset($css_includes) ? $css_includes : array();
   <div class="wrapper">
     <div id="header">
       <div class="wrapper">
-        <h1><a href="/"><span>Governing Michigan</span></a></h1>
+        <h1>
+          <a href="/">
+            <span>
+              <img src="" width="309" height="41" alt="Governing Michigan Logo" />
+              Governing Michigan
+            </span>
+          </a>
+        </h1>
         <ul id="nav">
-          <li id="nav-seek"><a href="/seek.php"> Seek</a></li>
-          <li id="nav-discover"><a href="/discover.php"> Discover</a></li>
+          <li id="nav-seek"><a href="/seek"> Seek</a></li>
+          <li id="nav-discover"><a href="/discover"> Discover</a></li>
         </ul>
       </div>
     </div>
