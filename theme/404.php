@@ -1,7 +1,9 @@
 <?
-$breadcrumbs = array('Page not found' => '');
-define("BODY_CLASS","seek");
-include('header.php');
+app()->partial('header', 
+  array(
+    'breadcrumbs' => array('Page not found' => ''),
+    'body_class' => 'seek',
+    'title' => 'Not Found'));
 ?>
 <div id="main-content">
 	<div class="wrapper">
@@ -10,4 +12,4 @@ include('header.php');
       that someone has given you an incorrect URL or the resource you are looking for no longer exists.</p>
 	</div>
 </div>
-<? include('footer.php'); ?>
+<?php app()->partial('footer', array()); ?>
