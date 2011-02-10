@@ -17,9 +17,7 @@ app()->partial('header',
       <div class="wrapper">
         <form method="get" action="http://cdm15559.contentdm.oclc.org/seek_results.php">
         <h3><label for="search-text">Keyword Search.</label></h3>
-        <h4>Lorem Ipsum Dolor.</h4>
-        <p>Lambio delictu ando factisi lomar. Lorem ipsum dolor sit amet collecti ambio delictu ando factisi lomar gallardo.</p>
-        <p>Quandicum ergo sum ad liricus.</p>      
+        <p>Search for DNR documents and photographs.</p>
         <input type="hidden" name="CISOOP1" value="any" />
         <input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" />
         <input type="hidden" name="CISOROOT" value="all" />
