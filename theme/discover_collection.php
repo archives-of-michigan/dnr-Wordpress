@@ -57,7 +57,7 @@ app()->partial('header',
           <li class="share-this"><!-- AddThis Button BEGIN --><script type="text/javascript">addthis_pub  = 'seekingmichigan'; addthis_offset_top = -10; addthis_offset_left = 5; addthis_options = 'delicious, email, digg, facebook, google, technorati, twitter, myspace,  more';</script><a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()">Share This</a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script><!-- AddThis Button END --></li>
         </ul>
     
-        <form method="get" action="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php">
+        <form method="get" action="http://cdm15559.contentdm.oclc.org/seeking_michigan/seek_results.php">
           <input type="hidden" name="CISOOP1" value="any" />
           <input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" />
           <input type="hidden" name="CISOROOT" value="<?= $collection_alias ?>">
@@ -67,51 +67,7 @@ app()->partial('header',
           <label for="search-collection-button" class="hidden">Search </label>
           <input type="image" id="search-collection-button" value=" " src="/images/search-button.png" />
         </form>
-        <p class="advanced-search"><a href="http://seekingmichigan.cdmhost.com/seeking_michigan/seek_advanced.php">Advanced Search &raquo; </a></p>   
-      </div>
-    </div>
-    <div  class="featured in-collection">
-      <div class="wrapper mod">
-        <h2>Featured Items</h2>
-        <? if(count($featured_items) > 0): ?>
-          <ul class="col1 color">
-            <? $row = 'odd'; ?>
-            <? foreach($featured_items as $item): ?>
-              <li class="<?= $row ?> mod">
-                <h3> 
-                  <a href="<?= $item->url ?>" title="View Result">
-                    <img src="<?= $item->thumbnail ?>" alt="thumbnail" />
-                    <?= $item->Title ?>
-                  </a>
-                </h3>
-                <p class="byline"><?= $item->descri ?></p>
-              </li>
-              <? $row = ($row == 'odd') ? 'even' : 'odd'; ?>
-            <? endforeach; ?>
-          </ul>
-        <? else: ?>
-          No featured items
-        <? endif ?>
-      </div>
-    </div>
-    <div  class="recent-related">
-      <div class="wrapper">
-        <h2>Recent Related Blog Entries</h2>
-        <ul class="blog-entries">
-          <? query_posts('tag='.$collection_alias); ?>
-          <? if(have_posts()): ?>
-            <? while(have_posts()) : the_post(); ?>
-              <li>
-                <h3> <a href="<?= the_permalink(); ?>" title="View <?= the_title(); ?>"><?= the_title(); ?></a></h3>
-                <p class="byline">By <a href="<?= the_author_url(); ?>"><? the_author() ?></a> | <span class="date"><?= the_date('F j, Y'); ?></span></p>
-                <p><?= the_excerpt(); ?></p>
-                <p><a href="<?= the_permalink(); ?>">Read more&hellip;</a></p>
-              </li>
-            <? endwhile; ?>
-          <? else: ?>
-            <li>No entries posted yet</li>
-          <? endif; ?>
-        </ul>
+        <p class="advanced-search"><a href="http://cdm15559.contentdm.oclc.org/seeking_michigan/seek_advanced.php">Advanced Search &raquo; </a></p>   
       </div>
     </div>
   </div>
