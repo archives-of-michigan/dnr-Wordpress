@@ -11,9 +11,13 @@ function show_collection($collection) {
   include('include/collection.php');
 }
 
-$breadcrumbs = array('Discover' => '/discover', 'Collections' => '', );
+$breadcrumbs = 
 define("BODY_CLASS","discover");
-include('header.php');
+app()->partial('header', 
+  array(
+    'breadcrumbs' => array('Home' => '/', 'Discover' => ''),
+    'body_class' => 'discover',
+    'title' => 'Discover'));
 
 require_once('settings.php');
 require_once('lib/content_dm.php');
@@ -110,4 +114,4 @@ for($i = 0; $i < $num_other_items; $i++) {
     </div>
   </div>
 </div>
-<? include('footer.php'); ?>
+<?php app()->partial('footer', array()); ?>
