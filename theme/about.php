@@ -1,11 +1,13 @@
-<?
+<?php
 /*
 Template Name: About
 */
 
-$breadcrumbs = array('About' => '');
-define("BODY_CLASS","seek");
-include('header.php');
+app()->partial('header', 
+  array(
+    'breadcrumbs' => array('About' => ''),
+    'body_class' => 'about',
+    'title' => 'About'));
 ?>
 
 <div id="main-content">

@@ -1,6 +1,8 @@
-<?
-define("BODY_CLASS","look");
-include('header.php');
+<?php
+app()->partial('header', 
+  array(
+    'breadcrumbs' => array('Home' => '/'),
+    'body_class' => 'seek'));
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -16,4 +18,4 @@ include('header.php');
 <div id="main-whitebox-left"></div>
 <div id="main-whitebox-right"></div>
 
-<? include('footer.php'); ?>
+<?php app()->partial('footer', array()); ?>
