@@ -36,11 +36,11 @@ app()->partial('header',
     </div>
     <div id="discover-bar">
       <div class="wrapper">
-        <h3>COLLECTION NAME </h3>
-        <h4><a href="seek_results.php?alias=collection" title="View COLLECTION NAME">COLLECTION BYLINE</a></h4>
-        <p>COLLECTION DESCRIPTION</p>
-        <p><a href="seek_results.php?alias=collection" title="Read more">Read more »</a> | <a href="/discover.php" title="View more collections">View more collections &raquo;</a></p>
-        <p class="advanced"><a href="seek_results.php?alias=collection">COLLECTION NAME</a></p>
+        <h3>Wildlife Division Reports</h3>
+        <h4><a href="http://cdm15559.cotentdm.oclc.org/cdm4/browse.php?CISOROOT=/p15559coll1" title="View Wildlife Division Reports">Reports from the Wildlife Division</a></h4>
+        <p>A collection of surveys and other material from the Wildlife Division library.</p>
+        <p><a href="/discover-collection?collection=p15559coll1" title="Read more">Read more »</a> | <a href="/discover" title="View more collections">View more collections &raquo;</a></p>
+        <p class="advanced"><a href="http://cdm15559.cotentdm.oclc.org/cdm4/browse.php?CISOROOT=/p15559coll1">Wildlife Division Reports</a></p>
       </div>
     </div>
   </div>
