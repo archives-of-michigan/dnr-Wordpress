@@ -626,6 +626,10 @@ ul#breadcrumbs a {
 	color: #fcf7e7;
 	max-width: 580px; /* keeps text from overlapping on text resize in browser */
 }
+#section-header h1 {
+	padding-left: 40px;
+	padding-top: 40px;
+}
 
 /* --- HOME PAGE COLOR BARS --- */
 #main-bars {
