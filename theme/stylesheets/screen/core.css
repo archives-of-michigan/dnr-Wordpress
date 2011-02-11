@@ -1542,6 +1542,13 @@ form#browse-search .advanced-search {
 	max-width: 170px;
 	max-height: 170px;
 }
+.seek ol.search-results li h3 img {
+  border: 1px solid #666;
+  float: left;
+  margin: 0 0 20px -142px;
+  padding: 3px;
+  max-width: 125px;
+}
 .seek #main-content ol.search-results li p {
 	margin-left: 230px;
 	color: #000000;
