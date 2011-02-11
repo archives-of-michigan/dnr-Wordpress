@@ -10,7 +10,7 @@ $contentdm = new ContentDM(CONTENTDM_HOSTNAME, CONTENTDM_ROOT_PATH, CONTENTDM_AJ
 
 $cdm_collection = $contentdm->collectionInfo($collection_alias);
 if($cdm_collection === FALSE) {
-  header('Location: http://seekingmichigan.org/404.php');
+  header('Location: http://dnr.seekingmichigan.org/404.php');
 }
 $collection_post = FALSE;
 foreach(get_posts('category=23,28,44&numberposts=-1') as $post) {

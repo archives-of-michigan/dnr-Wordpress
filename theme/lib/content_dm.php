@@ -68,7 +68,7 @@ class ContentDM {
   }
   
   public function url_for_collection_alias($alias) {
-    return 'http://seekingmichigan.cdmhost.com/seeking_michigan/seek_results.php?CISOROOT='.$alias;
+    return 'http://cdm15559.contentdm.oclc.org//seeking_michigan/seek_results.php?CISOROOT='.$alias;
   }
   
   public function url_for_item($id) {
