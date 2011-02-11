@@ -13,15 +13,13 @@ if($cdm_collection === FALSE) {
   header('Location: http://dnr.seekingmichigan.org/404.php');
 }
 $collection_post = FALSE;
-foreach(get_posts('category=23,28,44&numberposts=-1') as $post) {
+foreach(get_posts('numberposts=-1') as $post) {
   if(get_post_meta($post->ID, 'alias', true) == $_GET['collection']) {
     $collection_post = $post;
   }
 }
 
 $collection = create_collection($collection_post, $contentdm, array($cdm_collection));
-
-$featured_items = $contentdm->featured_items_for_collection($collection_alias);
 
 app()->partial('header', 
   array(
