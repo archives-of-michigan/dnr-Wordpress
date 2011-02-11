@@ -23,8 +23,8 @@ require_once('settings.php');
 require_once('lib/content_dm.php');
 $contentdm = new ContentDM(CONTENTDM_HOSTNAME, CONTENTDM_ROOT_PATH, CONTENTDM_AJAX_PATH);
 
-$featured_collection_posts = get_posts('category=28&numberposts=4');
-$non_featured_collection_posts = get_posts('category=23&numberposts=-1');
+$featured_collection_posts = get_posts('cat=Featured Collection&numberposts=4');
+$non_featured_collection_posts = get_posts('cat=Collection&numberposts=-1');
 
 
 # All collections
