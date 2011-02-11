@@ -267,7 +267,7 @@ body  .wrapper {
 	
 }
 #header {
-	background: transparent url(/images/main-header.jpg) no-repeat 50% 100%;
+	background: transparent url(/images/main-header-dnre.jpg) no-repeat 50% 100%;
 }
 #header .wrapper {
 	position: relative;
@@ -633,7 +633,7 @@ ul#breadcrumbs a {
 	margin: 0 auto;
 	padding: 0;
 	height: 383px;
-	background: #5797d7 url(/images/home-panel-bg.jpg) no-repeat 0 0;
+	background: #5797d7 url(/images/home-panel-bg_falsecolor.png) no-repeat 0 0;
 	position: relative;
 }
 #seek-bar,

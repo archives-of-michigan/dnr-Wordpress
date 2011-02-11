@@ -7,13 +7,13 @@ app()->partial('header',
 ?>
 <div id="main-bars">
   <div id="logo-bar">
-    <p>Your resource for government documents from the State of Michigan</p>
+    <p>Your resource for documents, reports, and photos from the Dept. of Natural Resources and Environment</p>
   </div>
   <div id="seek-bar">
     <div class="wrapper">
       <form method="get" action="http://cdm15559.contentdm.oclc.org/seek_results.php">
       <h3><label for="search-text">Keyword Search.</label></h3>
-      <p>Search for DNR documents and photographs.</p>
+      <p>Search for DNRE documents and photographs.</p>
       <input type="hidden" name="CISOOP1" value="any" />
       <input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" />
       <input type="hidden" name="CISOROOT" value="all" />
