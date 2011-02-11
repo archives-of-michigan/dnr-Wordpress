@@ -263,16 +263,17 @@
   }
 
   function fillFaceboxFromImage(href, klass) {
-    
     var image = new Image()
+    var src = image.src.replace(/&amp;/,'&')
     image.onload = function() {
-      $.facebox.reveal('<div class="image"><img src="' + image.src + '" /></div>', klass)
+      $.facebox.reveal('<div class="image"><img src="' + src + '" /></div>', klass)
     }
-    image.src = href
+    image.src = src
   }
 
   function fillFaceboxFromAjax(href, klass) {
-    $.get(href, function(data) { $.facebox.reveal(data, klass) })
+    var src = href.replace(/&amp;/,'&')
+    $.get(src, function(data) { $.facebox.reveal(data, klass) })
   }
 
   function skipOverlay() {
