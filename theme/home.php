@@ -11,7 +11,7 @@ app()->partial('header',
   </div>
   <div id="seek-bar">
     <div class="wrapper">
-      <form method="get" action="http://cdm15559.contentdm.oclc.org/seek_results.php">
+      <form method="get" action="http://cdm15559.contentdm.oclc.org/seeking_michigan/seek_results.php">
       <h3><label for="search-text">Keyword Search.</label></h3>
       <p>Search for DNRE documents and photographs.</p>
       <input type="hidden" name="CISOOP1" value="any" />
@@ -22,16 +22,16 @@ app()->partial('header',
       <label for="search-button" class="hidden">Search</label>
       <input type="image" src="/images/x.gif" id="search-button" name="search-button" value=" " />
     </form>
-    <p class="advanced-search"><a href="/seek">Advanced Search</a></p>
+    <p class="advanced-search"><a href="http://cdm15559.contentdm.oclc.org/seeking_michigan/seek_advanced.php">Advanced Search</a></p>
    </div>
   </div>
   <div id="discover-bar">
     <div class="wrapper">
       <h3>Wildlife Division Reports</h3>
-      <h4><a href="http://cdm15559.cotentdm.oclc.org/cdm4/browse.php?CISOROOT=/p15559coll1" title="View Wildlife Division Reports">Reports from the Wildlife Division</a></h4>
+      <h4><a href="http://cdm15559.contentdm.oclc.org/cdm4/browse.php?CISOROOT=/p15559coll1" title="View Wildlife Division Reports">Reports from the Wildlife Division</a></h4>
       <p>A collection of surveys and other material from the Wildlife Division library.</p>
       <p><a href="/discover-collection?collection=p15559coll1" title="Read more">Read more »</a> | <a href="/discover" title="View more collections">View more collections &raquo;</a></p>
-      <p class="advanced"><a href="http://cdm15559.cotentdm.oclc.org/cdm4/browse.php?CISOROOT=/p15559coll1">Wildlife Division Reports</a></p>
+      <p class="advanced"><a href="http://cdm15559.contentdm.oclc.org/cdm4/browse.php?CISOROOT=/p15559coll1">Wildlife Division Reports</a></p>
     </div>
   </div>
 </div>

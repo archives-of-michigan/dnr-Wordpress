@@ -5,7 +5,7 @@
         <div class="links">
           <ul class="first">
             <li><a href="/">Home</a></li>
-            <li><a href="http://cdm15559.contentdm.oclc.org/seek_advanced.php">Seek</a></li>
+            <li><a href="http://cdm15559.contentdm.oclc.org/seeking_michigan/seek_advanced.php">Seek</a></li>
             <li><a href="/discover">Discover</a></li>
           </ul>
           <ul class="second">
