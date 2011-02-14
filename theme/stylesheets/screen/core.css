@@ -34,7 +34,17 @@ textarea {
 	border-color: #7C7C7C #7C7C7C #C3C3C3 #C3C3C3;
 }
 
+/* ADDITIONAL RULES IMPORTED IN A HURRY FROM SEEKINGMICHIGAN.ORG */
 
+.discover .collections li img {
+margin-right: 20px;
+max-width: 190px;
+max-height: 133px;
+float: left;
+border: 1px #AAA solid;
+padding: 3px;
+margin-left: -220px;
+}
 
 
 /*- DESIGN
@@ -637,7 +647,7 @@ ul#breadcrumbs a {
 	margin: 0 auto;
 	padding: 0;
 	height: 383px;
-	background: #5797d7 url(/images/home-panel-bg_falsecolor.png) no-repeat 0 0;
+	background: #5797d7 url(/images/home-panel-bg_state.png) no-repeat 0 0;
 	position: relative;
 }
 #seek-bar,
