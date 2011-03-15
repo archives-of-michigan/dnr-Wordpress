@@ -65,7 +65,7 @@ $css_includes = isset($css_includes) ? $css_includes : array();
         </h1>
         <ul id="nav">
           <li id="nav-home"><a href="/">Home</a></li>
-          <li id="nav-seek"><a href="/seek"> Seek</a></li>
+          <li id="nav-seek"><a href="http://cdm15559.contentdm.oclc.org/seeking_michigan/seek_advanced.php"> Seek</a></li>
           <li id="nav-discover"><a href="/discover"> Discover</a></li>
         </ul>
       </div>

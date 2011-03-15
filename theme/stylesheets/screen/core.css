@@ -329,7 +329,6 @@ body  .wrapper {
 }
 #nav-home a {
 	background-image: url(/images/nav-bg-home.png);	
-	background-position: 0 0;
 	width: 116px;
 }
 
@@ -348,9 +347,10 @@ body  .wrapper {
 }
 /* conditional anchor state based on body.class */
 
+body.home #nav-home a,
 body.seek #nav-seek a,
 body.discover #nav-discover a {
-	background-position: 0 -36px;
+	background-position: 0 0;
 }
 
 /*- action callout on home -*/
