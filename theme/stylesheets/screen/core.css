@@ -658,6 +658,8 @@ ul#breadcrumbs a {
 .discover #section-header,
 .seek #section-header {
 	height: 75px;
+	margin-top: 18px;
+	margin-left: 18px;
 }
 
 .discover #section-header h1,
