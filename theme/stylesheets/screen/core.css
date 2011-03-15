@@ -316,6 +316,7 @@ body  .wrapper {
 	display: inline;
 	margin-left: 4px;
 }
+#nav-home a,
 #nav-seek a,
 #nav-discover a
  {
@@ -326,13 +327,18 @@ body  .wrapper {
 	background: transparent no-repeat 0 100%;
 	text-indent: -1000em;
 }
-#nav-seek a {
-	background-image: url(/images/nav-bg-onoff.gif);	
+#nav-home a {
+	background-image: url(/images/nav-bg-home.png);	
 	background-position: 0 0;
 	width: 116px;
 }
+
+#nav-seek a {
+	background-image: url(/images/nav-bg-seek.png);	
+	width: 116px;
+}
 #nav-discover a {
-	background-image: url(/images/nav-bg-onoff.gif);
+	background-image: url(/images/nav-bg-discover.png);
 	width: 116px;
 }
 /* hover moves background of anchor */

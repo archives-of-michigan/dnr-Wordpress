@@ -52,19 +52,19 @@ $css_includes = isset($css_includes) ? $css_includes : array();
     </script>
   <? endif; ?>
 </head>
-<body id="www-governingmichigan-gov" <? if(isset($body_class)): ?>class="<?= $body_class ?>"<? endif; ?>>
+<body id="dnr-seekingmichigan-org" <? if(isset($body_class)): ?>class="<?= $body_class ?>"<? endif; ?>>
   <div class="wrapper">
     <div id="header">
       <div class="wrapper">
         <h1>
           <a href="/">
             <span>
-              <img src="/images/" width="309" height="41" alt="Governing Michigan Logo" />
-              Governing Michigan
+              DNR Online Library
             </span>
           </a>
         </h1>
         <ul id="nav">
+          <li id="nav-home"><a href="/">Home</a></li>
           <li id="nav-seek"><a href="/seek"> Seek</a></li>
           <li id="nav-discover"><a href="/discover"> Discover</a></li>
         </ul>
