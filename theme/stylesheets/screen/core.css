@@ -506,9 +506,7 @@ ul#breadcrumbs a {
 	width: 856px;
 	background: none;
 	background-color: transparent;
-	margin: 0;
-	margin-top: 40px;
-	margin-bottom: 10px;
+	margin: 10px 0;
 	padding: 0;
 }
 /* overrides just for .wrapper's inside other .wrappers */
@@ -1586,7 +1584,7 @@ form#browse-search .advanced-search {
 .seek ol.search-results li h3 img {
   border: 1px solid #666;
   float: left;
-  margin: 0 0 20px -142px;
+  margin: 0 0 20px -180px;
   padding: 3px;
   max-width: 125px;
 }
